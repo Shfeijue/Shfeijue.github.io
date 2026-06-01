@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海非爵光电科技有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/v4-shims.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .product-card {
+                @apply bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+            }
+            .product-card img {
+                @apply w-full h-48 object-cover;
+            }
+            .product-card .content {
+                @apply p-6;
+            }
+            .product-card h3 {
+                @apply text-xl font-semibold mb-2 text-gray-800;
+            }
+            .product-card p {
+                @apply text-gray-600 text-sm;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-primary">上海非爵光电科技有限公司</h1>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">首页</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">关于我们</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary transition-colors">产品中心</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">专业光电科技解决方案提供商</h2>
+            <p class="text-xl mb-8 opacity-90">专注于光电产品研发、生产与销售，为客户提供高品质的光学元件和系统解决方案</p>
+            <a href="#products" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                查看产品
+            </a>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">关于非爵光电</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">上海非爵光电科技有限公司致力于光电技术的创新与应用，拥有先进的生产设备和专业的技术团队，为全球客户提供优质的产品和服务。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">技术创新</h3>
+                    <p class="text-gray-600">持续投入研发，不断推出新技术新产品</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">品质保证</h3>
+                    <p class="text-gray-600">严格的质量控制体系，确保产品性能稳定</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">客户服务</h3>
+                    <p class="text-gray-600">专业的技术支持，及时响应客户需求</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品中心 -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">产品中心</h2>
+                <p class="text-gray-600">涵盖激光光学、红外光学、光纤光学等多个领域</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品卡片 1 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens1/600/400" alt="K9平凸透镜">
+                    <div class="content">
+                        <h3>K9平凸透镜</h3>
+                        <p><strong>规格：</strong>直径12.7mm，焦距50mm，增透膜400-700nm</p>
+                        <p><strong>应用：</strong>激光系统、光学成像</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片 2 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens2/600/400" alt="石英平凹透镜">
+                    <div class="content">
+                        <h3>石英平凹透镜</h3>
+                        <p><strong>规格：</strong>直径25.4mm，焦距-100mm，UV增透膜</p>
+                        <p><strong>应用：</strong>紫外激光、光谱分析</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片 3 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens3/600/400" alt="CaF2窗口片">
+                    <div class="content">
+                        <h3>CaF2窗口片</h3>
+                        <p><strong>规格：</strong>尺寸25x25x2mm，双面增透膜1-5μm</p>
+                        <p><strong>应用：</strong>红外成像、光谱仪器</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片 4 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens4/600/400" alt="光纤准直器">
+                    <div class="content">
+                        <h3>光纤准直器</h3>
+                        <p><strong>规格：</strong>波长1550nm，工作距离10mm，FC/APC接口</p>
+                        <p><strong>应用：</strong>光纤通信、光纤传感</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片 5 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens5/600/400" alt="反射镜">
+                    <div class="content">
+                        <h3>铝反射镜</h3>
+                        <p><strong>规格：</strong>尺寸50x50x3mm，反射率>92%@400-700nm</p>
+                        <p><strong>应用：</strong>激光系统、光学仪器</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片 6 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens6/600/400" alt="偏振片">
+                    <div class="content">
+                        <h3>线偏振片</h3>
+                        <p><strong>规格：</strong>尺寸30x30mm，消光比>1000:1，波长532nm</p>
+                        <p><strong>应用：</strong>偏振测量、激光调制</p>
+                    </div>
+                </div>
+
+                <!-- 更多产品可以继续添加 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens7/600/400" alt="波片">
+                    <div class="content">
+                        <h3>1/4波片</h3>
+                        <p><strong>规格：</strong>波长633nm，通光孔径10mm，零级波片</p>
+                        <p><strong>应用：</strong>偏振控制、光学计量</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens8/600/400" alt="滤光片">
+                    <div class="content">
+                        <h3>带通滤光片</h3>
+                        <p><strong>规格：</strong>中心波长532nm，带宽10nm，OD>4</p>
+                        <p><strong>应用：</strong>荧光检测、激光雷达</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/lens9/600/400" alt="棱镜">
+                    <div class="content">
+                        <h3>直角棱镜</h3>
+                        <p><strong>规格：</strong>尺寸25x25x25mm，K9材质，全反射</p>
+                        <p><strong>应用：</strong>光路转折、光学仪器</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">联系我们</h2>
+                <p class="text-gray-600">期待与您合作，共同推动光电技术发展</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">公司信息</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>上海市浦东新区张江高科技园区</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-3"></i>
+                            <span>+86 21-5888-xxxx</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <span>info@feijue-optics.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe text-primary mr-3"></i>
+                            <span>www.feijue-optics.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">快速留言</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="您的姓名" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <input type="email" placeholder="邮箱地址" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <textarea placeholder="留言内容" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2026 上海非爵光电科技有限公司. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 opacity-0 invisible" id="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 返回顶部功能
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
