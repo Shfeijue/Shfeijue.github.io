@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -11,10 +10,11 @@
 
 <!-- 导航栏 -->
 <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
+  <div class="max-w-4xl mx-auto flex justify-between items-center">
     <div class="text-xl font-bold">上海非爵光电</div>
-    <div class="space-x-6">
+    <div class="space-x-6 hidden md:flex">
       <a href="#home" class="hover:text-blue-200">首页</a>
+      <a href="#equipment" class="hover:text-blue-200">检测设备</a>
       <a href="#products" class="hover:text-blue-200">产品中心</a>
       <a href="#contact" class="hover:text-blue-200">联系我们</a>
     </div>
@@ -22,115 +22,163 @@
 </nav>
 
 <!-- 首页横幅 -->
-<section id="home" class="bg-blue-800 text-white py-16 text-center">
-  <h1 class="text-4xl font-bold mb-4">上海非爵光电科技有限公司</h1>
-  <p class="text-lg max-w-2xl mx-auto">高精度光学元件 | 透镜 | 反射镜 | 光学系统定制</p>
+<section id="home" class="bg-blue-800 text-white py-20 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-6">上海非爵光电科技有限公司</h1>
+  <p class="text-xl max-w-3xl mx-auto mb-8">专业高精度光学元件定制 | 透镜 | 反射镜 | 光学系统 | 精密检测服务</p>
+  <p class="text-lg">拥有Zygo干涉仪、Mahr轮廓仪等全套进口检测设备</p>
 </section>
 
-<!-- 产品中心（PDF一一对应） -->
-<section id="products" class="max-w-6xl mx-auto py-16 px-4">
-  <h2 class="text-3xl font-bold text-center mb-12">产品展示</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-    <!-- 1 椭球面透镜 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://pic.ntimg.cn/2021/03/04/18665551_114301350165_2.jpg" alt="椭球面透镜" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">1. 椭球面透镜</h3>
-      <p>直径155MM</p>
-      <p>PV 0.089λ，RMS 0.015λ</p>
+<!-- 检测设备展示 -->
+<section id="equipment" class="max-w-4xl mx-auto py-16 px-4">
+  <h2 class="text-3xl font-bold text-center mb-12">核心检测设备</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- 设备1 Zygo干涉仪 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/1.jpg" alt="Zygo激光干涉仪" class="w-full h-64 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Zygo 4英寸激光干涉仪</h3>
+        <p class="text-gray-600">高精度光学表面面形检测，PV/RMS精度可达纳米级</p>
+      </div>
     </div>
-
-    <!-- 2 离轴抛物面镜 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img.alicdn.com/imgextra/i3/2212655340/O1CN01mGdHbn2BnHlpXXXXXcVXa-2212655340.jpg" alt="离轴抛物面镜" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">2. 离轴抛物面镜</h3>
-      <p>直径80mm</p>
-      <p>PV 0.102λ，RMS 0.013λ</p>
+    <!-- 设备2 Mahr轮廓仪 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/2.jpg" alt="Mahr MarSurf LD Aspheric 2D" class="w-full h-64 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Mahr MarSurf LD Aspheric 2D</h3>
+        <p class="text-gray-600">非球面轮廓高精度测量，支持2D/3D轮廓分析</p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- 3 卡塞格林系统 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img0.baidu.com/it/u=829624109,214566666&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="卡塞格林系统" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">3. 卡塞格林系统</h3>
-      <p>直径310毫米，信号接收</p>
-      <p>PV 0.122λ，RMS 0.019λ</p>
+<!-- 产品中心（单列布局，每行一个） -->
+<section id="products" class="bg-white py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">产品展示</h2>
+    <div class="space-y-12">
+
+      <!-- 1 椭球面透镜 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/3.jpg" alt="椭球面透镜" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">1. 椭球面透镜</h3>
+          <p class="text-lg mb-2">直径155MM</p>
+          <p class="text-lg">PV 0.089λ，RMS 0.015λ</p>
+        </div>
+      </div>
+
+      <!-- 2 离轴抛物面镜 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/5.jpg" alt="离轴抛物面镜" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">2. 离轴抛物面镜</h3>
+          <p class="text-lg mb-2">直径80mm</p>
+          <p class="text-lg">PV 0.102λ，RMS 0.013λ</p>
+        </div>
+      </div>
+
+      <!-- 3 卡塞格林系统 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/8.jpg" alt="卡塞格林系统" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">3. 卡塞格林系统</h3>
+          <p class="text-lg mb-2">直径310毫米，信号接收专用</p>
+          <p class="text-lg">PV 0.122λ，RMS 0.019λ</p>
+        </div>
+      </div>
+
+      <!-- 4 抛物面镜 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/4.jpg" alt="抛物面镜" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">4. 抛物面镜</h3>
+          <p class="text-lg mb-2">直径116MM</p>
+          <p class="text-lg">PV 0.122λ，RMS 0.019λ</p>
+        </div>
+      </div>
+
+      <!-- 5 离轴椭球面 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/7.jpg" alt="离轴椭球面" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">5. 离轴椭球面</h3>
+          <p class="text-lg">高精度非球面光学元件</p>
+        </div>
+      </div>
+
+      <!-- 6 卡塞格林望远系统 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/6.jpg" alt="卡塞格林望远系统" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">6. 卡塞格林望远系统</h3>
+          <p class="text-lg mb-2">主镜320mm，副镜120MM</p>
+          <p class="text-lg">PV 1/5λ</p>
+        </div>
+      </div>
+
+      <!-- 7 刀口仪器检测装置 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/9.jpg" alt="刀口仪器检测装置" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">7. 刀口检测装置</h3>
+          <p class="text-lg">卡塞格林主镜/副镜专用检测</p>
+        </div>
+      </div>
+
+      <!-- 8 Zerodur双曲面镜 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/11.jpg" alt="Zerodur双曲面镜" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">8. Zerodur双曲面镜</h3>
+          <p class="text-lg">直径175MM</p>
+        </div>
+      </div>
+
+      <!-- 9 医疗激光石英腔体 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/10.jpg" alt="医疗激光石英腔体" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">9. 医疗激光石英腔体</h3>
+          <p class="text-lg">医疗激光设备专用</p>
+        </div>
+      </div>
+
+      <!-- 10 半球盖 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/12.jpg" alt="半球盖" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">10. 半球盖</h3>
+          <p class="text-lg">高精度光学罩体</p>
+        </div>
+      </div>
+
+      <!-- 11 5片胶合透镜 -->
+      <div class="bg-slate-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="https://raw.githubusercontent.com/Shfeijue/Shfeijue.github.io/main/images/13.jpg" alt="5片胶合透镜" class="w-full md:w-1/2 h-64 object-contain rounded">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold mb-4">11. 5片胶合透镜</h3>
+          <p class="text-lg">高精度复合透镜组</p>
+        </div>
+      </div>
+
     </div>
-
-    <!-- 4 抛物面镜 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://pic.ntimg.cn/2020/05/14/18145426_162622366666_2.jpg" alt="抛物面镜" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">4. 抛物面镜</h3>
-      <p>直径116MM</p>
-      <p>PV 0.122λ，RMS 0.019λ</p>
-    </div>
-
-    <!-- 5 离轴椭球面 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img.alicdn.com/imgextra/i4/2212655340/O1CN01x1vHbn2BnHo9XXXXXXVXa-2212655340.jpg" alt="离轴椭球面" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">5. 离轴椭球面</h3>
-      <p>高精度非球面元件</p>
-    </div>
-
-    <!-- 6 卡塞格林望远系统 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img0.baidu.com/it/u=2207511466,3081001250&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=750" alt="卡塞格林望远系统" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">6. 卡塞格林望远系统</h3>
-      <p>主镜320mm，副镜120MM</p>
-      <p>PV 1/5λ</p>
-    </div>
-
-    <!-- 7 刀口仪器检测装置 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://pic.ntimg.cn/2021/07/22/19765426_114422366666_2.jpg" alt="刀口仪器检测装置" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">7. 刀口检测装置</h3>
-      <p>卡塞格林主/副镜检测</p>
-    </div>
-
-    <!-- 8 Zerodur双曲面镜 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img.alicdn.com/imgextra/i2/2212655340/O1CN01yJvHbn2BnHlXXXXXXVXa-2212655340.jpg" alt="Zerodur双曲面镜" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">8. Zerodur双曲面镜</h3>
-      <p>直径175MM</p>
-    </div>
-
-    <!-- 9 医疗激光石英腔体 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://pic.ntimg.cn/2022/01/15/21455551_112233666666_2.jpg" alt="医疗激光石英腔体" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">9. 医疗激光石英腔体</h3>
-      <p>医疗激光设备专用</p>
-    </div>
-
-    <!-- 10 半球盖 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://img.alicdn.com/imgextra/i1/2212655340/O1CN01zHvHbn2BnHqXXXXXXVXa-2212655340.jpg" alt="半球盖" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">10. 半球盖</h3>
-      <p>高精度光学罩体</p>
-    </div>
-
-    <!-- 11 5片胶合透镜 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <img src="https://pic.ntimg.cn/2020/11/03/18445426_113322366666_2.jpg" alt="5片胶合透镜" class="w-full h-48 object-contain mb-4 rounded">
-      <h3 class="text-xl font-bold mb-2">11. 5片胶合透镜</h3>
-      <p>高精度复合透镜组</p>
-    </div>
-
   </div>
 </section>
 
 <!-- 联系我们 -->
 <section id="contact" class="bg-blue-900 text-white py-16">
-  <div class="max-w-6xl mx-auto px-4 text-center">
+  <div class="max-w-4xl mx-auto px-4 text-center">
     <h2 class="text-3xl font-bold mb-8">联系我们</h2>
-    <div class="text-lg space-y-3">
-      <p>联系人：王经理</p>
-      <p>电话：13127951168</p>
-      <p>地址：上海市嘉定区兴文路885号5栋1楼</p>
+    <div class="text-lg space-y-4">
+      <p class="text-xl">联系人：王经理</p>
+      <p class="text-xl">电话：13127951168</p>
+      <p class="text-xl">地址：上海市嘉定区兴文路885号5栋1楼</p>
     </div>
   </div>
 </section>
 
-<footer class="bg-blue-950 text-blue-200 text-center p-4 text-sm">
-  上海非爵光电科技有限公司 © 版权所有
+<footer class="bg-blue-950 text-blue-200 text-center p-6 text-sm">
+  上海非爵光电科技有限公司 © 2026 版权所有
 </footer>
 
 </body>
